@@ -66,8 +66,16 @@ header{
     background-color: #D74452;
 }
 
+.book{
+	background-color: #2D838D;
+}
+
 .books{
     background-color: #2D838D;
+}
+
+.event{
+	background-color: #DAD3B7;
 }
 
 .events{
@@ -78,8 +86,15 @@ header{
     background-color: #DB9F34;
 }
 
-.company{
+#company{
     background-color: #DB8E36;
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+#company div{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }
 
 img{
@@ -99,11 +114,64 @@ svg{
 }
 
 .socialmedia{
-	padding: 50px;
+	padding: 10px;
+
+}
+
+form{
+	font-family: 'comfortaa', light;
+    font-size: x-large;
+	display:grid;
+	grid-template-columns: 1fr;
+}
+
+.hidden{
+	visibility: hidden;
 }
 /*Global Stuff END*/
 
 /*Specific Rules Stuff*/
-.company.side{
-	display:inline-block;
+
+@media (min-width: 640px){
+
+}
+
+
+@media (min-width: 768px){
+	h1, h2, h3 ,h4{
+		font-family: 'comfortaa', bold;
+		font-size: large;
+	}
+	
+	p{
+		font-family: 'comfortaa', light;
+		font-size: medium;
+	}
+
+	.books{
+		display:grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	img{
+		height:350px;
+		width:auto;
+	}
+
+	.events{
+		display:grid;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+	
+@media (min-width: 1024px){
+	.books{
+		display:grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+
+	.events{
+		display:grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
 }
